@@ -1,0 +1,2 @@
+rootProject.name='PAP-FR-2_Android'
+include ':app'
