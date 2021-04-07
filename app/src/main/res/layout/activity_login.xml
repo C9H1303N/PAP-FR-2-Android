@@ -45,30 +45,60 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"></TextView>
 
+    <ImageView
+        android:layout_width="80px"
+        android:layout_height="84px"
+        android:layout_marginStart="2sp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="0sp"
+        android:src="@drawable/usernamelogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        ></ImageView>
+
     <EditText
         android:id="@+id/username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="65dp"
         android:layout_marginTop="300dp"
         android:layout_marginEnd="24dp"
+        android:textColor="#333333"
 
-        android:hint="@string/prompt_email"
-        android:inputType="textEmailAddress"
+        android:hint="请输入用户名"
+        android:inputType="text"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:layout_width="80px"
+        android:layout_height="84px"
+        android:layout_marginStart="2sp"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="0sp"
+        android:src="@drawable/passwordlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        ></ImageView>
+
     <EditText
         android:id="@+id/password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="65dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
+        android:textColor="#333333"
 
-        android:hint="@string/prompt_password"
+        android:hint="请输入密码"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
@@ -95,24 +125,43 @@
         app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.2"
         android:background="@drawable/login"/>
+
     <Button
         android:id="@+id/register"
-        android:layout_width="888px"
-        android:layout_height="200px"
+        android:layout_width="308dp"
+        android:layout_height="44dp"
         android:layout_gravity="start"
         android:layout_marginStart="48dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="64dp"
+        android:background="@drawable/registerbottom"
         android:enabled="false"
         android:text="注册"
-        android:textColor="#ffffff"
+        android:textColor="#666666"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/login"
-        app:layout_constraintVertical_bias="0.2"
-        android:background="@drawable/login"/>
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="1dp"
+        android:text="忘记密码？"
+        android:textAlignment="center"
+        android:textColor="#666666"
+        android:textSize="36px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977"></TextView>
 
     <ImageView
         android:layout_width="120dp"
