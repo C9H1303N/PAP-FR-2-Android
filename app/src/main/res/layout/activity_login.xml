@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginBottom="1000dp"
         android:scaleType="fitXY"
-        android:src="@drawable/banner4x"
+        android:src="@mipmap/banner4x"
 
         ></ImageView>
 
@@ -51,7 +51,7 @@
         android:layout_marginStart="2sp"
         android:layout_marginTop="312dp"
         android:layout_marginEnd="0sp"
-        android:src="@drawable/usernamelogo"
+        android:src="@mipmap/usernamelogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,7 +81,7 @@
         android:layout_marginStart="2sp"
         android:layout_marginTop="364dp"
         android:layout_marginEnd="0sp"
-        android:src="@drawable/passwordlogo"
+        android:src="@mipmap/passwordlogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,7 +124,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.2"
-        android:background="@drawable/login"/>
+        android:background="@mipmap/login"/>
 
     <Button
         android:id="@+id/register"
@@ -135,7 +135,7 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="64dp"
-        android:background="@drawable/registerbottom"
+        android:background="@mipmap/registerbottom"
         android:enabled="false"
         android:text="注册"
         android:textColor="#666666"
@@ -168,14 +168,13 @@
         android:layout_height="100dp"
         android:layout_marginStart="0sp"
         android:layout_marginEnd="0sp"
-        android:layout_marginTop="120dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/register"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="0dp"
         android:scaleType="fitStart"
-        android:src="@drawable/leftbottom">
+        android:src="@mipmap/leftbottom">
     </ImageView>
     <ProgressBar
         android:id="@+id/loading"

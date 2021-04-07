@@ -23,7 +23,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginBottom="1000dp"
-        android:background="@drawable/topback"
+        android:background="@mipmap/topback"
         >
     </ImageView>
     <TextView
@@ -31,12 +31,12 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="88px"
+        android:layout_marginTop="60px"
         android:layout_marginEnd="8dp"
         android:text="找回密码"
         android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textSize="54px"
+        android:textSize="60px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +52,7 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="668dp"
-        android:background="@drawable/leftarrow"
+        android:background="@mipmap/leftarrow"
         android:enabled="false"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,15 +68,15 @@
         android:layout_gravity="start"
         android:layout_marginStart="110dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="456dp"
-        android:background="@drawable/vertifybox"
+        android:background="@mipmap/vertifybox"
+        android:layout_marginTop="2dp"
         android:enabled="false"
         android:textColor="#5d7599"
         android:text="获取验证码"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vertifycode"/>
 
     <ImageView
         android:layout_width="80px"
@@ -84,7 +84,7 @@
         android:layout_marginStart="10sp"
         android:layout_marginTop="180dp"
         android:layout_marginEnd="0sp"
-        android:src="@drawable/phonelogo"
+        android:src="@mipmap/phonelogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
@@ -115,7 +115,7 @@
         android:layout_marginStart="10sp"
         android:layout_marginTop="250dp"
         android:layout_marginEnd="0sp"
-        android:src="@drawable/vertifylogo"
+        android:src="@mipmap/vertifylogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
@@ -146,7 +146,7 @@
         android:layout_marginStart="10sp"
         android:layout_marginTop="320dp"
         android:layout_marginEnd="0sp"
-        android:src="@drawable/passwordlogo"
+        android:src="@mipmap/passwordlogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
@@ -178,7 +178,7 @@
         android:layout_marginStart="10sp"
         android:layout_marginTop="390dp"
         android:layout_marginEnd="0sp"
-        android:src="@drawable/passwordlogo"
+        android:src="@mipmap/passwordlogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
@@ -218,7 +218,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.2"
-        android:background="@drawable/login"/>
+        android:background="@mipmap/login"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
