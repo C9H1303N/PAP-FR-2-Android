@@ -92,8 +92,7 @@ public class register extends AppCompatActivity implements View.OnClickListener 
             }
         }
         else if (v.getId() == R.id.back){
-
-            Toast.makeText(this, "这里是返回测试", Toast.LENGTH_SHORT).show();
+            register.this.finish();
         }
         else if (v.getId() == R.id.vertify){
 
