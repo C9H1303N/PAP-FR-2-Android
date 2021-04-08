@@ -9,20 +9,40 @@ import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.pap_fr_2_android.ui.main.ui.login.LoginActivity;
+public class register extends AppCompatActivity implements View.OnClickListener {
+    private Button login;
+    private Button back;
+    private Button vertify;
+    private EditText phonenum;
+    private EditText vertifycode;
+    private EditText newPassword;
+    private EditText repeatPassword;
 
-public class register extends AppCompatActivity {
-
+    private void initView(){
+        login = findViewById(R.id.login);
+        back = findViewById(R.id.back);
+        vertify = findViewById(R.id.vertify);
+        phonenum = findViewById(R.id.phonenum);
+        vertifycode = findViewById(R.id.vertifycode);
+        newPassword = findViewById(R.id.renewpassword);
+        repeatPassword = findViewById(R.id.checkpassword);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         TextView tv = findViewById(R.id.agreement);
         final Uri uri=Uri.parse("https://baidu.com");
+        initView();
+        login.setOnClickListener(this);
+        back.setOnClickListener(this);
+        vertify.setOnClickListener(this);
 
         final SpannableStringBuilder style = new SpannableStringBuilder();
 
@@ -45,14 +65,39 @@ public class register extends AppCompatActivity {
         //配置给TextView
         tv.setMovementMethod(LinkMovementMethod.getInstance());
         tv.setText(style);
+    }
 
-        Button changelog = (Button) findViewById(R.id.back);
-        changelog.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(register.this, LoginActivity.class);
-                startActivity(i);
+    public void onClick(View v){
+        if (v.getId() == R.id.login){
+            String password1 = newPassword.getText().toString();
+            String password2 = repeatPassword.getText().toString();
+            String phonum = phonenum.getText().toString();
+            String vercode = vertifycode.getText().toString();
+            if (password1.equals("") || password2.equals("") || phonum.equals("") || vercode.equals("")){
+                Toast.makeText(this,"请输入完整信息",Toast.LENGTH_SHORT).show();
             }
-        });
+            else if (false){         // 验证码正确性判断
+
+            }
+            else if (false){        //手机号是否注册过
+
+            }
+            else if (!password1.equals(password2)){
+                Toast.makeText(this, "两次密码输入不一致", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                Toast.makeText(this, "注册成功！", Toast.LENGTH_SHORT).show();
+                //数据库请求
+                //跳转到登录页面
+            }
+        }
+        else if (v.getId() == R.id.back){
+
+            Toast.makeText(this, "这里是返回测试", Toast.LENGTH_SHORT).show();
+        }
+        else if (v.getId() == R.id.vertify){
+
+            Toast.makeText(this, "这里是验证测试", Toast.LENGTH_SHORT).show();
+        }
     }
 }
