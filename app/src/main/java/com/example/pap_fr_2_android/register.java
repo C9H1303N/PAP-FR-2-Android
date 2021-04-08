@@ -88,7 +88,9 @@ public class register extends AppCompatActivity implements View.OnClickListener 
             else {
                 Toast.makeText(this, "注册成功！", Toast.LENGTH_SHORT).show();
                 //数据库请求
+
                 //跳转到登录页面
+                register.this.finish();
             }
         }
         else if (v.getId() == R.id.back){

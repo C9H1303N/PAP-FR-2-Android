@@ -20,9 +20,7 @@ public class findpass extends AppCompatActivity {
         changelog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //System.out.println("nmsl");
-                Intent i = new Intent(findpass.this, LoginActivity.class);
-                startActivity(i);
+                findpass.this.finish();
             }
         });
     }
