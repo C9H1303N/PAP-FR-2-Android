@@ -1,5 +1,7 @@
 package com.example.pap_fr_2_android;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
@@ -17,6 +19,7 @@ public class register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         TextView tv = findViewById(R.id.agreement);
+        final Uri uri=Uri.parse("https://baidu.com");
 
         final SpannableStringBuilder style = new SpannableStringBuilder();
 
@@ -27,7 +30,8 @@ public class register extends AppCompatActivity {
         ClickableSpan clickableSpan = new ClickableSpan() {
             @Override
             public void onClick(View widget) {
-                //Toast.makeText(MainActivity.this, "触发点击事件!", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(intent);
             }
         };
         style.setSpan(clickableSpan, 8, 16, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
