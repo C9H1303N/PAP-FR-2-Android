@@ -8,9 +8,12 @@ import android.text.SpannableStringBuilder;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.pap_fr_2_android.ui.main.ui.login.LoginActivity;
 
 public class register extends AppCompatActivity {
 
@@ -42,5 +45,14 @@ public class register extends AppCompatActivity {
         //配置给TextView
         tv.setMovementMethod(LinkMovementMethod.getInstance());
         tv.setText(style);
+
+        Button changelog = (Button) findViewById(R.id.back);
+        changelog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(register.this, LoginActivity.class);
+                startActivity(i);
+            }
+        });
     }
 }
