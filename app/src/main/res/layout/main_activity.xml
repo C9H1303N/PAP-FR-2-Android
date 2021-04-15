@@ -20,7 +20,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:button="@null"
-            android:drawableTop="@mipmap/bottomnavi_mainpageunselect"
+            android:checked="true"
+            android:drawableTop="@drawable/radio_group_selector_mainpage"
+            android:text="@string/mainpage"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:textColor="@color/color_radiobutton"
+            android:layout_marginTop="5dp"
             android:gravity="center" />
 
 
@@ -30,7 +36,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:button="@null"
-            android:drawableTop="@mipmap/bottomnavi_dongtaiunselect"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:textColor="@color/color_radiobutton"
+            android:layout_marginTop="5dp"
+            android:drawableTop="@drawable/radio_group_selector_dongtai"
+            android:text="@string/dongtai"
             android:gravity="center" />
 
 
@@ -39,8 +50,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginTop="5dp"
             android:button="@null"
-            android:drawableTop="@mipmap/bottomnavi_messageunselected"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:textColor="@color/color_radiobutton"
+            android:drawableTop="@drawable/radio_group_selector_message"
+            android:text="@string/message"
             android:gravity="center" />
 
         <RadioButton
@@ -49,8 +65,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:button="@null"
-            android:checked="true"
-            android:drawableTop="@mipmap/bottomnavi_mineunselect"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:textColor="@color/color_radiobutton"
+            android:text="@string/mine"
+            android:layout_marginTop="5dp"
+            android:drawableTop="@drawable/radio_group_selector_mine"
             android:gravity="center" />
     </RadioGroup>
 
