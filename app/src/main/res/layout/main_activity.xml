@@ -4,4 +4,54 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" />
+    tools:context=".MainActivity" >
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:background="@mipmap/bottomnavi_naviframe"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_mainpage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/bottomnavi_mainpageunselect"
+            android:gravity="center" />
+
+
+        <RadioButton
+            android:id="@+id/rb_dongtai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/bottomnavi_dongtaiunselect"
+            android:gravity="center" />
+
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/bottomnavi_messageunselected"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@mipmap/bottomnavi_mineunselect"
+            android:gravity="center" />
+    </RadioGroup>
+
+</FrameLayout>
